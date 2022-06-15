@@ -172,8 +172,26 @@ newsidinfo=urlinfo.substr(offset,len)//取出参数字符串 这里会获得类�
 
 	
 if (newsidinfo != ""){
-	document.getElementById("currentTime").style.color = 'green'
-	
+	switch (new Date().getDay()) {
+	    case "green":
+			document.getElementById("currentTime").style.color = 'green'
+	        break;
+	    case "red":
+			document.getElementById("currentTime").style.color = 'red'
+	        break;
+	    case "yellow":
+			document.getElementById("currentTime").style.color = 'yellow'
+	        break;
+	    case "orange":
+			document.getElementById("currentTime").style.color = 'orange'
+	        break;
+	    case "blue":
+			document.getElementById("currentTime").style.color = 'blue'
+	        break;
+	    case "purple":
+			document.getElementById("currentTime").style.color = 'purple'
+	        break;
+	} 
 }
 
 </script>
