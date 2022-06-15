@@ -167,32 +167,7 @@
 			len = urlinfo.length; //获取url的长度
 			offset = urlinfo.indexOf("?"); //设置参数字符串开始的位置
 			newsidinfo = urlinfo.substr(offset+1, len) //取出参数字符串 这里会获得类似“id=1”这样的字符串
-
-
-
-			switch (newsidinfo) {
-				case "":
-					break;
-
-				case "green":
-					document.getElementById("currentTime").style.color = 'green'
-					break;
-				case "red":
-					document.getElementById("currentTime").style.color = 'red'
-					break;
-				case "yellow":
-					document.getElementById("currentTime").style.color = 'yellow'
-					break;
-				case "orange":
-					document.getElementById("currentTime").style.color = 'orange'
-					break;
-				case "blue":
-					document.getElementById("currentTime").style.color = 'blue'
-					break;
-				case "purple":
-					document.getElementById("currentTime").style.color = 'purple'
-					break;
-			}
+					document.getElementById("currentTime").style.color = newsidinfo
 		</script>
 
 	</body>
